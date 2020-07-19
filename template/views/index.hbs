@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>weather</title>
+    <link rel='stylesheet' href='/css/styles.css'>
+</head>
+
+<body>
+    <div>
+        {{>header}}
+        <div id = 'form'>
+            <h2>Enter location</h2>
+            <form>
+                <label for='loaction'>Location *:</label><br>
+                <input type='text' id='location' name='location' required><br>
+                <lable for='units'>Units *</lable><br>
+                <lable><input type='radio' id = 'c' value = 'c' name='units' checked>Degree Celsius</lable><br>
+                <lable><input type='radio' id = 'f' value = 'f' name='units'>Degree Farenheit</lable><br>
+                <button type='submit'>Submit</button>
+            </form>
+            <p id = 'one'></p>
+            <p id = 'two'></p>
+            {{>footer}}
+        </div>
+    </div>
+    <script src='/js/app.js'></script>
+</body>
+
+</html>
