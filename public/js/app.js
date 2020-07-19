@@ -16,7 +16,7 @@ weatherForm.addEventListener('submit', (e) => {
     let url = 'http://localhost:3000/weather?address=' + encodeURIComponent(locData.location)
 
     //loading message
-    element('one').textContent = 'Loading!'
+    element('one').textContent = 'loading!'
 
     //fetch data from url
     fetch(url).then((response) => {
